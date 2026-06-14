@@ -81,6 +81,7 @@ body{padding-top:var(--nav-h)}
 .hero__brushstroke{display:block;margin-bottom:1.25rem;width:clamp(180px,40%,320px)}
 .hero__sub{font-size:clamp(1.05rem,1.8vw,1.25rem);color:rgba(255,255,255,.78);margin-bottom:2.25rem;max-width:56ch}
 .hero__cta{display:flex;flex-wrap:wrap;gap:.875rem;margin-bottom:3rem}
+@media(max-width:480px){.hero__cta{flex-direction:column}.hero__cta .btn{width:100%;justify-content:center}}
 .hero__trust{display:flex;flex-wrap:wrap;gap:1.25rem}
 .trust-badge{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.9);font-size:.9rem;font-weight:500}
 .trust-badge__icon{width:32px;height:32px;background:rgba(200,146,42,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--c-amber)}
