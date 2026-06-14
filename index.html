@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1C2B4A">
+<meta name="color-scheme" content="light">
+<title>Malerbetrieb Brandt GmbH – Maler &amp; Lackierer in Bremen</title>
+<meta name="description" content="Ihr Malerbetrieb in Bremen seit 1987. Meisterbetrieb für Innen- und Außenmalerei, Fassadensanierung, Tapezierarbeiten und Lackierarbeiten. Kostenlose Beratung &amp; Festpreisgarantie.">
+<meta property="og:title" content="Malerbetrieb Brandt GmbH – Maler &amp; Lackierer in Bremen">
+<meta property="og:description" content="Meisterbetrieb für Malerarbeiten in Bremen und Umgebung. Seit 1987 für Qualität, Termintreue und Festpreise.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--c-navy:#1C2B4A;--c-navy-dark:#101d33;--c-amber:#C8922A;--c-amber-light:#e0a930;--c-bg:#F8F7F4;--c-bg-alt:#EFF0F2;--c-text:#1A1A1A;--c-text-muted:#5A6474;--c-border:#D8D9DC;--c-white:#FFFFFF;--c-success:#1F7A4A;--font-display:'Playfair Display',Georgia,serif;--font-body:'Inter',system-ui,sans-serif;--radius:8px;--radius-lg:16px;--shadow:0 2px 12px rgba(0,0,0,.08);--shadow-lg:0 8px 32px rgba(0,0,0,.12);--nav-h:68px;--max-w:1140px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:100%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{font-family:var(--font-body);background:var(--c-bg);color:var(--c-text);line-height:1.6;font-size:clamp(1rem,1.05vw,1.1rem);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+:focus-visible{outline:3px solid var(--c-amber);outline-offset:3px;border-radius:3px}
+.container{width:100%;max-width:var(--max-w);margin-inline:auto;padding-inline:clamp(1rem,5vw,2rem)}
+.section{padding-block:clamp(3.5rem,8vw,6rem)}
+.section--alt{background:var(--c-bg-alt)}
+.section__label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--c-amber);display:block;margin-bottom:.5rem}
+.section__title{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--c-navy);line-height:1.2;margin-bottom:1rem}
+.section__lead{font-size:clamp(1rem,1.5vw,1.15rem);color:var(--c-text-muted);max-width:60ch;margin-bottom:2.5rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.75rem;border-radius:var(--radius);font-weight:600;font-size:1rem;transition:background .2s,transform .15s,box-shadow .2s;min-height:48px;white-space:nowrap}
+.btn--primary{background:var(--c-amber);color:var(--c-white)}
+.btn--primary:hover{background:var(--c-amber-light);box-shadow:0 4px 16px rgba(200,146,42,.4)}
+.btn--outline{background:transparent;color:var(--c-white);border:2px solid rgba(255,255,255,.5)}
+.btn--outline:hover{background:rgba(255,255,255,.1);border-color:var(--c-white)}
+.btn--navy{background:var(--c-navy);color:var(--c-white)}
+.btn--navy:hover{background:var(--c-navy-dark)}
+.btn--white{background:var(--c-white);color:var(--c-amber)}
+.btn--white:hover{background:rgba(255,255,255,.9)}
+.btn--outline-white{background:transparent;color:var(--c-white);border:2px solid rgba(255,255,255,.6)}
+.btn--outline-white:hover{background:rgba(255,255,255,.1)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.tabular{font-variant-numeric:tabular-nums}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--c-navy);box-shadow:0 2px 12px rgba(0,0,0,.2);height:var(--nav-h)}
+body{padding-top:var(--nav-h)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:100%;gap:1rem}
+.nav__logo{display:flex;flex-direction:column;color:var(--c-white);line-height:1.15;flex-shrink:0}
+.nav__logo-name{font-family:var(--font-display);font-size:1.15rem;font-weight:700}
+.nav__logo-sub{font-size:.72rem;color:var(--c-amber);letter-spacing:.08em;text-transform:uppercase}
+.nav__links{display:flex;align-items:center;gap:clamp(.5rem,2vw,1.5rem)}
+.nav__links a{color:rgba(255,255,255,.82);font-size:.92rem;font-weight:500;padding:.25rem 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav__links a:hover{color:var(--c-white);border-color:var(--c-amber)}
+.nav__tel{display:flex!important;align-items:center;gap:.4rem;background:var(--c-amber);color:var(--c-white)!important;padding:.5rem 1rem;border-radius:var(--radius);font-weight:600;font-size:.9rem;min-height:44px;border:none!important;white-space:nowrap;flex-shrink:0;transition:background .2s}
+.nav__tel:hover{background:var(--c-amber-light)!important}
+.nav__burger{display:none;flex-direction:column;gap:5px;padding:10px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.nav__burger span{display:block;width:22px;height:2px;background:var(--c-white);border-radius:2px;transition:transform .3s,opacity .3s}
+.nav__burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav__burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav__burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(min-width:769px){.nav__links .nav__tel{display:none!important}}
+@media(max-width:768px){
+  .nav__links{display:none;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--c-navy-dark);flex-direction:column;align-items:stretch;padding:1rem;gap:0}
+  .nav__links.open{display:flex}
+  .nav__links a{padding:.875rem .5rem;border-bottom:1px solid rgba(255,255,255,.1);font-size:1rem}
+  .nav__links .nav__tel{margin-top:.75rem;justify-content:center}
+  .nav__burger{display:flex}
+  .nav__tel--desktop{display:none}
+}
+
+/* HERO */
+.hero{background:var(--c-navy);background-image:radial-gradient(ellipse at 70% 50%,rgba(200,146,42,.08) 0%,transparent 60%),linear-gradient(135deg,#1C2B4A 0%,#0f1b33 100%);padding-block:clamp(5rem,12vw,9rem);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(255,255,255,.025) 59px,rgba(255,255,255,.025) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(255,255,255,.025) 59px,rgba(255,255,255,.025) 60px);pointer-events:none}
+.hero__inner{position:relative;z-index:1;max-width:720px}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--c-amber);margin-bottom:1.25rem}
+.hero__eyebrow::before{content:'';width:24px;height:2px;background:var(--c-amber);flex-shrink:0}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5.5vw,4rem);color:var(--c-white);line-height:1.15;margin-bottom:.5rem}
+.hero__brushstroke{display:block;margin-bottom:1.25rem;width:clamp(180px,40%,320px)}
+.hero__sub{font-size:clamp(1.05rem,1.8vw,1.25rem);color:rgba(255,255,255,.78);margin-bottom:2.25rem;max-width:56ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:.875rem;margin-bottom:3rem}
+.hero__trust{display:flex;flex-wrap:wrap;gap:1.25rem}
+.trust-badge{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.9);font-size:.9rem;font-weight:500}
+.trust-badge__icon{width:32px;height:32px;background:rgba(200,146,42,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--c-amber)}
+
+/* ABOUT */
+.about__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(max-width:700px){.about__grid{grid-template-columns:1fr}}
+.about__visual{background:var(--c-navy);border-radius:var(--radius-lg);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.about__visual::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 60%,rgba(200,146,42,.3) 0%,transparent 45%),radial-gradient(circle at 70% 30%,rgba(255,255,255,.06) 0%,transparent 40%)}
+.about__visual-text{position:relative;text-align:center;color:var(--c-white)}
+.about__stat{font-family:var(--font-display);font-size:clamp(3rem,7vw,5rem);font-weight:800;color:var(--c-amber);line-height:1}
+.about__stat-label{font-size:1rem;color:rgba(255,255,255,.75);margin-top:.25rem}
+.about__content p{color:var(--c-text-muted);margin-bottom:1rem;max-width:55ch}
+.about__highlights{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+.about__highlight{display:flex;align-items:flex-start;gap:.75rem;font-size:.95rem}
+.about__highlight-icon{width:20px;height:20px;color:var(--c-amber);flex-shrink:0;margin-top:2px}
+
+/* SERVICES */
+.services__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.25rem}
+.service-card{background:var(--c-white);border-radius:var(--radius-lg);padding:1.75rem;box-shadow:var(--shadow);border:1px solid var(--c-border);transition:transform .2s,box-shadow .2s}
+.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.service-card__icon{width:52px;height:52px;background:rgba(200,146,42,.1);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--c-amber);margin-bottom:1rem}
+.service-card__title{font-family:var(--font-display);font-size:1.2rem;color:var(--c-navy);margin-bottom:.5rem}
+.service-card__text{font-size:.92rem;color:var(--c-text-muted);line-height:1.65}
+
+/* WHY */
+.why__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1.5rem}
+.why-item{display:flex;gap:1rem;align-items:flex-start}
+.why-item__num{width:44px;height:44px;background:var(--c-navy);color:var(--c-amber);font-family:var(--font-display);font-size:1.1rem;font-weight:700;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.why-item__title{font-weight:700;color:var(--c-navy);margin-bottom:.3rem;font-size:1rem}
+.why-item__text{font-size:.9rem;color:var(--c-text-muted);line-height:1.6}
+
+/* REFS */
+.refs__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1.25rem}
+.ref-card{background:var(--c-white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--c-border)}
+.ref-card__visual{height:150px;background:var(--c-navy);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.ref-card__visual svg{opacity:.3;width:72px;height:72px;color:var(--c-white)}
+.ref-card__overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,43,74,.55),rgba(200,146,42,.25))}
+.ref-card__body{padding:1.25rem 1.5rem}
+.ref-card__tag{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--c-amber);background:rgba(200,146,42,.1);padding:.2rem .6rem;border-radius:4px;margin-bottom:.5rem}
+.ref-card__title{font-weight:700;color:var(--c-navy);margin-bottom:.35rem;font-size:1rem}
+.ref-card__text{font-size:.88rem;color:var(--c-text-muted)}
+
+/* REVIEWS */
+.reviews__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.25rem}
+.review-card{background:var(--c-white);border-radius:var(--radius-lg);padding:1.75rem;box-shadow:var(--shadow);border:1px solid var(--c-border);position:relative}
+.review-card::before{content:'\201C';position:absolute;top:1rem;right:1.5rem;font-family:var(--font-display);font-size:5rem;color:rgba(200,146,42,.12);line-height:1}
+.review-stars{display:flex;gap:2px;margin-bottom:.875rem;color:var(--c-amber)}
+.review-text{font-size:.95rem;color:var(--c-text-muted);line-height:1.7;margin-bottom:1.25rem}
+.review-author{display:flex;align-items:center;gap:.75rem}
+.review-author__avatar{width:40px;height:40px;border-radius:50%;background:var(--c-navy);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;color:var(--c-white);flex-shrink:0}
+.review-author__name{font-weight:600;font-size:.95rem;color:var(--c-navy)}
+.review-author__loc{font-size:.82rem;color:var(--c-text-muted)}
+
+/* PROCESS */
+.process__steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:2rem}
+.process__step{text-align:center}
+.process__step-num{width:64px;height:64px;background:var(--c-amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--c-white);margin:0 auto 1rem}
+.process__step-title{font-weight:700;color:var(--c-navy);margin-bottom:.4rem;font-size:1rem}
+.process__step-text{font-size:.88rem;color:var(--c-text-muted)}
+
+/* FAQ */
+.faq__list{max-width:720px;display:flex;flex-direction:column;gap:.75rem}
+.faq-item{background:var(--c-white);border-radius:var(--radius);border:1px solid var(--c-border);overflow:hidden}
+.faq-item__btn{width:100%;text-align:left;padding:1.1rem 1.5rem;font-size:.98rem;font-weight:600;color:var(--c-navy);display:flex;justify-content:space-between;align-items:center;gap:1rem;background:transparent;min-height:56px;transition:background .2s}
+.faq-item__btn:hover{background:rgba(0,0,0,.02)}
+.faq-item__btn[aria-expanded="true"]{color:var(--c-amber);background:rgba(200,146,42,.04)}
+.faq-item__icon{flex-shrink:0;width:20px;height:20px;transition:transform .3s}
+.faq-item__btn[aria-expanded="true"] .faq-item__icon{transform:rotate(45deg)}
+.faq-item__body{display:none;padding:0 1.5rem 1.1rem;font-size:.92rem;color:var(--c-text-muted);line-height:1.7}
+.faq-item__body.open{display:block}
+
+/* CTA BANNER */
+.cta-banner{background:var(--c-amber);padding-block:3rem}
+.cta-banner__inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem}
+.cta-banner__title{font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2rem);font-weight:700;color:var(--c-white);margin-bottom:.25rem}
+.cta-banner__sub{font-size:1rem;color:rgba(255,255,255,.88)}
+
+/* CONTACT */
+.section--contact{background:var(--c-navy);background-image:radial-gradient(ellipse at 20% 50%,rgba(200,146,42,.1) 0%,transparent 60%)}
+.contact__grid{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media(max-width:768px){.contact__grid{grid-template-columns:1fr}}
+.contact__info-title{font-family:var(--font-display);font-size:1.6rem;color:var(--c-white);margin-bottom:1.5rem}
+.contact__info-list{display:flex;flex-direction:column;gap:1.1rem;margin-bottom:2rem}
+.contact__info-item{display:flex;gap:.875rem;align-items:flex-start}
+.contact__info-icon{width:40px;height:40px;background:rgba(200,146,42,.15);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--c-amber);flex-shrink:0}
+.contact__info-label{font-size:.78rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
+.contact__info-value{color:var(--c-white);font-weight:500;font-size:.97rem}
+.contact__info-value a{color:var(--c-amber)}
+.contact__info-value a:hover{text-decoration:underline}
+.form-card{background:var(--c-white);border-radius:var(--radius-lg);padding:clamp(1.5rem,4vw,2.25rem);box-shadow:var(--shadow-lg)}
+.form-card__title{font-family:var(--font-display);font-size:1.4rem;color:var(--c-navy);margin-bottom:1.5rem}
+.form__row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:480px){.form__row{grid-template-columns:1fr}}
+.form__group{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.form__label{font-size:.875rem;font-weight:600;color:var(--c-navy)}
+.form__label span{color:var(--c-amber)}
+.form__input,.form__select,.form__textarea{width:100%;padding:.75rem 1rem;border:1.5px solid var(--c-border);border-radius:var(--radius);font-family:var(--font-body);font-size:.97rem;color:var(--c-text);background:var(--c-bg);transition:border-color .2s;min-height:48px}
+.form__input:focus,.form__select:focus,.form__textarea:focus{outline:none;border-color:var(--c-amber);background:var(--c-white)}
+.form__input.error,.form__select.error,.form__textarea.error{border-color:#c0392b}
+.form__textarea{min-height:120px;resize:vertical}
+.form__error{font-size:.8rem;color:#c0392b;display:none}
+.form__error.visible{display:block}
+.form__check{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1.25rem}
+.form__check input[type="checkbox"]{width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:var(--c-navy)}
+.form__check-label{font-size:.85rem;color:var(--c-text-muted);line-height:1.5}
+.form__submit{width:100%}
+.form__success{display:none;text-align:center;padding:2rem}
+.form__success-icon{width:56px;height:56px;background:rgba(31,122,74,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.form__success-title{font-family:var(--font-display);font-size:1.3rem;color:var(--c-success);margin-bottom:.5rem}
+.form__success-text{font-size:.92rem;color:var(--c-text-muted)}
+
+/* FOOTER */
+.footer{background:var(--c-navy-dark);color:rgba(255,255,255,.75);padding-block:3rem 1.5rem}
+.footer__grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:2.5rem;margin-bottom:2.5rem}
+@media(max-width:700px){.footer__grid{grid-template-columns:1fr;gap:2rem}}
+.footer__logo{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--c-white);margin-bottom:.75rem}
+.footer__tagline{font-size:.9rem;line-height:1.6;max-width:36ch;margin-bottom:1rem}
+.footer__area{font-size:.82rem;color:rgba(255,255,255,.5)}
+.footer__heading{font-weight:700;color:var(--c-white);margin-bottom:1rem;font-size:.92rem;text-transform:uppercase;letter-spacing:.08em}
+.footer__links{display:flex;flex-direction:column;gap:.5rem}
+.footer__links a{font-size:.9rem;color:rgba(255,255,255,.65);transition:color .2s}
+.footer__links a:hover{color:var(--c-amber)}
+.footer__contact-list{display:flex;flex-direction:column;gap:.5rem;font-size:.9rem}
+.footer__contact-list a{color:var(--c-amber)}
+.footer__contact-list a:hover{text-decoration:underline}
+.footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.4)}
+.footer__bottom a{color:rgba(255,255,255,.5)}
+.footer__bottom a:hover{color:var(--c-amber)}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="nav" aria-label="Hauptnavigation">
+  <div class="container nav__inner">
+    <a href="#" class="nav__logo" aria-label="Malerbetrieb Brandt GmbH – Startseite">
+      <span class="nav__logo-name">Malerbetrieb Brandt</span>
+      <span class="nav__logo-sub">Meisterbetrieb · Bremen</span>
+    </a>
+    <button class="nav__burger" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links" role="list">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#referenzen">Referenzen</a></li>
+      <li><a href="#ablauf">Ablauf</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li>
+        <a href="tel:+494219347200" class="nav__tel" aria-label="Jetzt anrufen">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.18 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z"/></svg>
+          <span class="tabular">0421 / 93 47 20</span>
+        </a>
+      </li>
+    </ul>
+    <a href="tel:+494219347200" class="nav__tel nav__tel--desktop" aria-label="Jetzt anrufen">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.18 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z"/></svg>
+      <span class="tabular">0421 / 93 47 20</span>
+    </a>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-h1">
+  <div class="container hero__inner">
+    <span class="hero__eyebrow">Meisterbetrieb in Bremen seit 1987</span>
+    <h1 id="hero-h1">Malerarbeiten,<br>die überzeugen –<br>in Bremen &amp; Umgebung.</h1>
+    <svg class="hero__brushstroke" viewBox="0 0 320 18" fill="none" aria-hidden="true">
+      <path d="M4 12 C40 6,80 16,120 10 C160 4,200 14,240 9 C270 5,295 12,316 8" stroke="#C8922A" stroke-width="5" stroke-linecap="round"/>
+      <path d="M12 14 C50 8,90 16,130 11 C170 5,210 15,250 10 C278 7,300 13,316 10" stroke="#C8922A" stroke-width="2" stroke-linecap="round" opacity=".4"/>
+    </svg>
+    <p class="hero__sub">Mit Festpreisgarantie, Termintreue und 35 Jahren Erfahrung bringen wir Farbe in Ihr Zuhause – sauber, pünktlich und ohne versteckte Kosten.</p>
+    <div class="hero__cta">
+      <a href="#kontakt" class="btn btn--primary">Kostenlose Anfrage stellen</a>
+      <a href="tel:+494219347200" class="btn btn--outline">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.18 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z"/></svg>
+        Jetzt anrufen
+      </a>
+    </div>
+    <div class="hero__trust" role="list">
+      <div class="trust-badge" role="listitem">
+        <div class="trust-badge__icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <span>Meisterbetrieb</span>
+      </div>
+      <div class="trust-badge" role="listitem">
+        <div class="trust-badge__icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <span>35+ Jahre Erfahrung</span>
+      </div>
+      <div class="trust-badge" role="listitem">
+        <div class="trust-badge__icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <span>Bremen &amp; 50 km Umgebung</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER UNS -->
+<section class="section" id="ueber-uns" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__visual reveal" aria-hidden="true">
+        <div class="about__visual-text">
+          <div class="about__stat">35+</div>
+          <div class="about__stat-label">Jahre Erfahrung in Bremen</div>
+        </div>
+      </div>
+      <div class="about__content reveal">
+        <span class="section__label">Über uns</span>
+        <h2 class="section__title" id="about-title">Ihr Maler-Meisterbetrieb<br>aus Bremen.</h2>
+        <p>Seit 1987 steht der Name Brandt in Bremen und dem Bremer Umland für handwerkliche Sorgfalt, ehrliche Beratung und Ergebnisse, auf die Sie stolz sein können. Was als Ein-Mann-Betrieb von Heinrich Brandt begann, führt sein Sohn Thomas Brandt heute als geprüfter Malermeister mit einem Team von 12 Fachkräften weiter.</p>
+        <p>Wir arbeiten für Privatkunden, Vermieter, Hausverwaltungen und Gewerbetreibende. Egal ob Einzelzimmer oder komplette Fassade – bei uns bekommen Sie immer ein verbindliches Festpreis-Angebot, bevor wir anfangen.</p>
+        <div class="about__highlights">
+          <div class="about__highlight">
+            <svg class="about__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Geprüfter Meisterbetrieb, Mitglied der Malerinnung Bremen</span>
+          </div>
+          <div class="about__highlight">
+            <svg class="about__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>12 ausgebildete Fachkräfte, eigenes Lager in Bremen-Walle</span>
+          </div>
+          <div class="about__highlight">
+            <svg class="about__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Kostenlose Beratung &amp; Musteranstriche vor Ort</span>
+          </div>
+          <div class="about__highlight">
+            <svg class="about__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Festpreisgarantie – kein versteckter Aufpreis nach der Arbeit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section class="section section--alt" id="leistungen" aria-labelledby="services-title">
+  <div class="container">
+    <span class="section__label">Was wir anbieten</span>
+    <h2 class="section__title" id="services-title">Unsere Leistungen</h2>
+    <p class="section__lead">Von der einzelnen Wand bis zur kompletten Fassade – wir erledigen alles aus einer Hand, termingerecht und auf höchstem Handwerksniveau.</p>
+    <div class="services__grid">
+      <article class="service-card reveal">
+        <div class="service-card__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg></div>
+        <h3 class="service-card__title">Innenmalerarbeiten</h3>
+        <p class="service-card__text">Wände, Decken und Türen streichen – sauber, gleichmäßig und mit hochwertigen Farben. Wir beraten Sie zur richtigen Farbe und Oberfläche für jeden Raum.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3 class="service-card__title">Außen- &amp; Fassadenmalerei</h3>
+        <p class="service-card__text">Schutz und optische Aufwertung für Ihr Gebäude. Wir streichen Außenwände fachgerecht mit witterungsbeständigen Farben für langjährigen Schutz.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <h3 class="service-card__title">Tapezierarbeiten</h3>
+        <p class="service-card__text">Vlies, Glasgewebe oder klassische Raufaser – wir tapezieren präzise und sauber. Inklusive Untergrundvorbereitung und Nahtverleimung.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg></div>
+        <h3 class="service-card__title">Fassadensanierung</h3>
+        <p class="service-card__text">Risse schließen, alten Putz reparieren, Dämmputz aufbringen – wir sanieren Ihre Fassade grundlegend für die nächsten Jahrzehnte.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3 class="service-card__title">Lackierarbeiten</h3>
+        <p class="service-card__text">Türen, Fensterrahmen, Heizkörper und Möbel – wir lackieren fein und staubfrei. Hochglanz, Seidenglanz oder matt: nach Ihrem Wunsch.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h3 class="service-card__title">Bodenbeläge</h3>
+        <p class="service-card__text">Laminat, Vinyl oder Designboden – wir verlegen sauber und zügig. Inklusive Sockelleisten und fachgerechter Unterlage.</p>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="#kontakt" class="btn btn--navy reveal">Jetzt kostenloses Angebot anfordern</a>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM WIR -->
+<section class="section" id="warum-wir" aria-labelledby="why-title">
+  <div class="container">
+    <span class="section__label">Unsere Stärken</span>
+    <h2 class="section__title" id="why-title">Warum Kunden<br>auf uns setzen</h2>
+    <div class="why__grid" style="margin-top:2rem">
+      <div class="why-item reveal">
+        <div class="why-item__num" aria-hidden="true">1</div>
+        <div>
+          <div class="why-item__title">Festpreisgarantie</div>
+          <p class="why-item__text">Schriftliches Festpreisangebot. Was wir nennen, ist was Sie zahlen – ohne Nachkalkulation oder versteckte Extras.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-item__num" aria-hidden="true">2</div>
+        <div>
+          <div class="why-item__title">Termintreue</div>
+          <p class="why-item__text">Vereinbarte Starttermine werden eingehalten – wir erscheinen pünktlich und arbeiten zügig, ohne Ihren Alltag länger zu stören als nötig.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-item__num" aria-hidden="true">3</div>
+        <div>
+          <div class="why-item__title">Saubere Arbeit</div>
+          <p class="why-item__text">Böden, Möbel und Einrichtung werden konsequent abgedeckt. Nach der Arbeit hinterlassen wir Ihre Räume makellos sauber.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-item__num" aria-hidden="true">4</div>
+        <div>
+          <div class="why-item__title">Geprüfter Meisterbetrieb</div>
+          <p class="why-item__text">Alle Arbeiten werden von ausgebildeten Fachkräften unter Meisteraufsicht ausgeführt. Kein Outsourcing, kein Qualitätsverlust.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-item__num" aria-hidden="true">5</div>
+        <div>
+          <div class="why-item__title">Kostenlose Vor-Ort-Beratung</div>
+          <p class="why-item__text">Wir kommen zu Ihnen, schauen uns alles an und beraten Sie ehrlich – ohne Verkaufsdruck und ohne Verpflichtung.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENZEN -->
+<section class="section section--alt" id="referenzen" aria-labelledby="refs-title">
+  <div class="container">
+    <span class="section__label">Unsere Arbeit</span>
+    <h2 class="section__title" id="refs-title">Ausgewählte Projekte</h2>
+    <p class="section__lead">Ein Einblick in das, was wir in Bremen und der Region in den letzten Jahren geleistet haben.</p>
+    <div class="refs__grid">
+      <article class="ref-card reveal">
+        <div class="ref-card__visual"><div class="ref-card__overlay"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="ref-card__body"><span class="ref-card__tag">Innenmalerei</span><h3 class="ref-card__title">Wohnungsrenovierung, Bremen-Schwachhausen</h3><p class="ref-card__text">4-Zimmer-Wohnung, ca. 110 m² – neue Wandfarben, Decken gestrichen, Türrahmen lackiert. Fertig in 4 Tagen.</p></div>
+      </article>
+      <article class="ref-card reveal">
+        <div class="ref-card__visual" style="background:#243b5e"><div class="ref-card__overlay"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+        <div class="ref-card__body"><span class="ref-card__tag">Fassadenmalerei</span><h3 class="ref-card__title">Mehrfamilienhaus-Fassade, Bremen-Findorff</h3><p class="ref-card__text">12-Parteien-Haus aus den 1970ern – Fassade gereinigt, grundiert und mit silikonverstärkter Dispersionsfarbe neu gestrichen.</p></div>
+      </article>
+      <article class="ref-card reveal">
+        <div class="ref-card__visual" style="background:#2d4a3e"><div class="ref-card__overlay"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <div class="ref-card__body"><span class="ref-card__tag">Tapezieren</span><h3 class="ref-card__title">Büroräume neu tapeziert, Bremen-Mitte</h3><p class="ref-card__text">Drei Büroetagen mit Glasgewebetapete – Arbeiten am Wochenende, keine Unterbrechung des Betriebs.</p></div>
+      </article>
+      <article class="ref-card reveal">
+        <div class="ref-card__visual" style="background:#3d2a1a"><div class="ref-card__overlay"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg></div>
+        <div class="ref-card__body"><span class="ref-card__tag">Fassadensanierung</span><h3 class="ref-card__title">Putz- &amp; Risssanierung, Worpswede</h3><p class="ref-card__text">Risse verfüllt, Putz erneuert, Wärmedämmputz aufgebracht – umfassende Sanierung eines Einfamilienhauses aus den 1960ern.</p></div>
+      </article>
+      <article class="ref-card reveal">
+        <div class="ref-card__visual" style="background:#1a2d4a"><div class="ref-card__overlay"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div class="ref-card__body"><span class="ref-card__tag">Lackierarbeiten</span><h3 class="ref-card__title">Türen &amp; Fenster lackiert, Lilienthal</h3><p class="ref-card__text">20 Türen und 14 Fensterstöcke in einer Mietwohnanlage – Schleifen, Grundieren und Lackieren in Seidenglanz.</p></div>
+      </article>
+      <article class="ref-card reveal">
+        <div class="ref-card__visual" style="background:#2a1a3d"><div class="ref-card__overlay"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <div class="ref-card__body"><span class="ref-card__tag">Bodenbelag</span><h3 class="ref-card__title">Vinyl-Designboden, Delmenhorst</h3><p class="ref-card__text">Erdgeschoss komplett mit Klick-Vinyl in Holzoptik belegt – inkl. Sockelleisten und Schwellenmontage.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- KUNDENBEWERTUNGEN -->
+<section class="section" id="bewertungen" aria-labelledby="reviews-title">
+  <div class="container">
+    <span class="section__label">Was unsere Kunden sagen</span>
+    <h2 class="section__title" id="reviews-title">Zufriedene Kunden<br>aus Bremen &amp; Umgebung</h2>
+    <div class="reviews__grid" style="margin-top:2rem">
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 von 5 Sternen">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">„Herr Brandt hat unser Wohnzimmer und den Flur gestrichen. Wir sind absolut begeistert – die Kanten sind tadellos, keine Spritzer, nichts. So sauber haben wir das noch nie erlebt. Kommen bei uns sofort wieder zum Einsatz."</p>
+        <div class="review-author">
+          <div class="review-author__avatar" aria-hidden="true">MK</div>
+          <div><div class="review-author__name">Maria K.</div><div class="review-author__loc">Bremen-Schwachhausen</div></div>
+        </div>
+      </article>
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 von 5 Sternen">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">„Unsere Fassade war in einem schlechten Zustand – Risse, verblasste Farbe. Das Team Brandt hat ganze Arbeit geleistet. Das Haus sieht aus wie neu. Festpreis wurde eingehalten, Termin auch. Klare Weiterempfehlung!"</p>
+        <div class="review-author">
+          <div class="review-author__avatar" aria-hidden="true">RH</div>
+          <div><div class="review-author__name">Ralf H.</div><div class="review-author__loc">Lilienthal</div></div>
+        </div>
+      </article>
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 von 5 Sternen">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">„Wir verwalten mehrere Mietobjekte in Bremen und arbeiten seit Jahren mit Malerbetrieb Brandt zusammen. Verlässlich, fair im Preis und immer pünktlich fertig. Für uns gibt es keine andere Wahl."</p>
+        <div class="review-author">
+          <div class="review-author__avatar" aria-hidden="true">ST</div>
+          <div><div class="review-author__name">Sandra T.</div><div class="review-author__loc">Hausverwaltung, Bremen-Mitte</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section class="section section--alt" id="ablauf" aria-labelledby="process-title">
+  <div class="container">
+    <span class="section__label">So arbeiten wir</span>
+    <h2 class="section__title" id="process-title">Ihr Weg zum perfekten Ergebnis</h2>
+    <p class="section__lead">Von der ersten Anfrage bis zum letzten Pinselstrich – klar, transparent und ohne böse Überraschungen.</p>
+    <div class="process__steps" style="margin-top:2.5rem">
+      <div class="process__step reveal">
+        <div class="process__step-num" aria-hidden="true">1</div>
+        <h3 class="process__step-title">Anfrage stellen</h3>
+        <p class="process__step-text">Rufen Sie uns an oder nutzen Sie das Kontaktformular – wir melden uns innerhalb eines Werktages bei Ihnen.</p>
+      </div>
+      <div class="process__step reveal">
+        <div class="process__step-num" aria-hidden="true">2</div>
+        <h3 class="process__step-title">Kostenlose Beratung</h3>
+        <p class="process__step-text">Wir kommen zu Ihnen, schauen uns alles an und beraten Sie ehrlich zu Farben, Materialien und Umfang.</p>
+      </div>
+      <div class="process__step reveal">
+        <div class="process__step-num" aria-hidden="true">3</div>
+        <h3 class="process__step-title">Festpreis-Angebot</h3>
+        <p class="process__step-text">Sie erhalten ein schriftliches Angebot mit klarem Festpreis. Keine Nachkalkulation, keine Überraschungen.</p>
+      </div>
+      <div class="process__step reveal">
+        <div class="process__step-num" aria-hidden="true">4</div>
+        <h3 class="process__step-title">Ausführung &amp; Übergabe</h3>
+        <p class="process__step-text">Unser Team arbeitet sauber und pünktlich. Nach Abschluss übergeben wir alles in makellosem Zustand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner" aria-label="Jetzt Angebot anfordern">
+  <div class="container cta-banner__inner">
+    <div>
+      <h2 class="cta-banner__title">Bereit für Ihr Projekt?</h2>
+      <p class="cta-banner__sub">Kostenlos anfragen – unverbindlich, direkt und unkompliziert.</p>
+    </div>
+    <div style="display:flex;gap:.875rem;flex-wrap:wrap">
+      <a href="#kontakt" class="btn btn--white">Anfrage stellen</a>
+      <a href="tel:+494219347200" class="btn btn--outline-white">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.18 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z"/></svg>
+        <span class="tabular">0421 / 93 47 20</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <span class="section__label">Häufige Fragen</span>
+    <h2 class="section__title" id="faq-title">Das fragen unsere Kunden</h2>
+    <div class="faq__list" style="margin-top:2rem">
+      <div class="faq-item reveal">
+        <button class="faq-item__btn" aria-expanded="false" aria-controls="faq1">Wie schnell erhalten wir ein Angebot?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div id="faq1" class="faq-item__body">Nach Ihrer Anfrage melden wir uns in der Regel am selben oder nächsten Werktag. Den Vor-Ort-Termin vereinbaren wir flexibel nach Ihrem Wunsch. Das schriftliche Festpreis-Angebot erhalten Sie danach innerhalb von 48 Stunden.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__btn" aria-expanded="false" aria-controls="faq2">Arbeiten Sie auch am Wochenende?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div id="faq2" class="faq-item__body">Ja, für größere Projekte oder Aufträge, bei denen eine Betriebsunterbrechung vermieden werden soll (z. B. Büroräume), arbeiten wir auch samstags. Sprechen Sie uns gerne an.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__btn" aria-expanded="false" aria-controls="faq3">Welche Farben und Materialien verwenden Sie?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div id="faq3" class="faq-item__body">Wir arbeiten mit bewährten Markenprodukten von Caparol, Alpina und Brillux. Auf Wunsch verwenden wir Öko-Farben mit niedrigen VOC-Werten. In der Beratung zeigen wir Ihnen Muster und erklären die Unterschiede offen.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__btn" aria-expanded="false" aria-controls="faq4">Muss ich während der Arbeiten zu Hause sein?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div id="faq4" class="faq-item__body">Nein, das ist nicht erforderlich. Viele unserer Kunden übergeben uns einen Schlüssel und kommen erst zur Abnahme wieder. Unsere Mitarbeiter sind versichert und gehen vertrauensvoll mit Ihrer Wohnung um.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__btn" aria-expanded="false" aria-controls="faq5">Bieten Sie eine Garantie auf Ihre Arbeiten?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div id="faq5" class="faq-item__body">Ja. Alle Malerarbeiten unterliegen der gesetzlichen Gewährleistung von 5 Jahren. Tritt innerhalb dieser Zeit ein Mangel auf, der auf unsere Arbeit zurückzuführen ist, beheben wir ihn auf unsere Kosten.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section section--contact" id="kontakt" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="reveal">
+        <span class="section__label">Kontakt</span>
+        <h2 class="contact__info-title" id="contact-title">Sprechen Sie uns an.<br>Wir sind für Sie da.</h2>
+        <ul class="contact__info-list" role="list">
+          <li class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.21 3.18 2 2 0 0 1 3.18 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z"/></svg></div>
+            <div><div class="contact__info-label">Telefon</div><div class="contact__info-value"><a href="tel:+494219347200" class="tabular">0421 / 93 47 20</a></div></div>
+          </li>
+          <li class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="contact__info-label">E-Mail</div><div class="contact__info-value"><a href="mailto:info@maler-brandt-bremen.de">info@maler-brandt-bremen.de</a></div></div>
+          </li>
+          <li class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="contact__info-label">Adresse</div><div class="contact__info-value">Waller Heerstr. 12<br>28219 Bremen</div></div>
+          </li>
+          <li class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><div class="contact__info-label">Öffnungszeiten</div><div class="contact__info-value">Mo – Fr: 7:00 – 18:00 Uhr<br>Sa: 8:00 – 13:00 Uhr</div></div>
+          </li>
+        </ul>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.5);margin-top:1rem">Einzugsgebiet: Bremen, Bremerhaven, Delmenhorst, Achim, Verden, Lilienthal, Worpswede und Umgebung bis 50 km.</p>
+      </div>
+      <div class="reveal">
+        <div class="form-card">
+          <h3 class="form-card__title">Kostenlose Anfrage stellen</h3>
+          <div class="form__success" id="form-success" aria-live="polite" tabindex="-1">
+            <div class="form__success-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F7A4A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <h4 class="form__success-title">Vielen Dank für Ihre Anfrage!</h4>
+            <p class="form__success-text">Wir melden uns innerhalb eines Werktages bei Ihnen. Sie erreichen uns auch direkt unter <a href="tel:+494219347200" style="color:var(--c-amber)">0421 / 93 47 20</a>.</p>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="f-name">Name <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="text" id="f-name" name="name" autocomplete="name" placeholder="Max Mustermann" required aria-required="true" aria-describedby="err-name">
+                <span class="form__error" id="err-name" role="alert">Bitte geben Sie Ihren Namen ein.</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="f-tel">Telefon</label>
+                <input class="form__input" type="tel" id="f-tel" name="telefon" autocomplete="tel" placeholder="0421 …" inputmode="tel">
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="f-email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+              <input class="form__input" type="email" id="f-email" name="email" autocomplete="email" placeholder="max@beispiel.de" required aria-required="true" aria-describedby="err-email" inputmode="email">
+              <span class="form__error" id="err-email" role="alert">Bitte geben Sie eine gültige E-Mail-Adresse ein.</span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="f-leistung">Gewünschte Leistung <span aria-hidden="true">*</span></label>
+              <select class="form__select" id="f-leistung" name="leistung" required aria-required="true" aria-describedby="err-leistung">
+                <option value="">Bitte wählen …</option>
+                <option value="innen">Innenmalerarbeiten</option>
+                <option value="aussen">Außen- &amp; Fassadenmalerei</option>
+                <option value="tapezieren">Tapezierarbeiten</option>
+                <option value="fassade">Fassadensanierung</option>
+                <option value="lack">Lackierarbeiten</option>
+                <option value="boden">Bodenbeläge</option>
+                <option value="sonstiges">Sonstiges</option>
+              </select>
+              <span class="form__error" id="err-leistung" role="alert">Bitte wählen Sie eine Leistung aus.</span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="f-msg">Kurze Beschreibung <span aria-hidden="true">*</span></label>
+              <textarea class="form__textarea" id="f-msg" name="nachricht" placeholder="z. B. 3-Zimmer-Wohnung, alle Wände und Decken streichen, ca. 80 m² …" required aria-required="true" aria-describedby="err-msg"></textarea>
+              <span class="form__error" id="err-msg" role="alert">Bitte beschreiben Sie kurz Ihr Anliegen.</span>
+            </div>
+            <div class="form__check">
+              <input type="checkbox" id="f-dsgvo" name="dsgvo" required aria-required="true">
+              <label class="form__check-label" for="f-dsgvo">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage gespeichert und verwendet werden. <a href="#" style="color:var(--c-amber)">Datenschutzhinweis</a></label>
+            </div>
+            <span class="form__error" id="err-dsgvo" role="alert" style="display:none;margin-bottom:.75rem">Bitte stimmen Sie der Datenschutzerklärung zu.</span>
+            <button type="submit" class="btn btn--navy form__submit">Anfrage jetzt senden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" aria-label="Fußbereich">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Malerbetrieb Brandt GmbH</div>
+        <p class="footer__tagline">Ihr zuverlässiger Meisterbetrieb für Malerarbeiten in Bremen und der Region – seit 1987 mit Festpreisgarantie und Termintreue.</p>
+        <p class="footer__area">Einzugsgebiet: Bremen · Bremerhaven · Delmenhorst · Achim · Lilienthal · Worpswede · Verden (bis 50 km)</p>
+      </div>
+      <div>
+        <div class="footer__heading">Navigation</div>
+        <ul class="footer__links" role="list">
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#referenzen">Referenzen</a></li>
+          <li><a href="#bewertungen">Bewertungen</a></li>
+          <li><a href="#ablauf">Ablauf</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Kontakt</div>
+        <ul class="footer__contact-list" role="list">
+          <li><a href="tel:+494219347200" class="tabular">0421 / 93 47 20</a></li>
+          <li><a href="mailto:info@maler-brandt-bremen.de">info@maler-brandt-bremen.de</a></li>
+          <li style="color:rgba(255,255,255,.6);margin-top:.25rem">Waller Heerstr. 12<br>28219 Bremen</li>
+          <li style="color:rgba(255,255,255,.6);margin-top:.5rem">Mo – Fr: 7:00 – 18:00<br>Sa: 8:00 – 13:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Malerbetrieb Brandt GmbH · Bremen</span>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Malerbetrieb Brandt GmbH",
+      "description": "Meisterbetrieb für Malerarbeiten in Bremen und Umgebung – Innen- und Außenmalerei, Fassadensanierung, Tapezieren, Lackieren, Bodenbeläge.",
+      "telephone": "+494219347200",
+      "email": "info@maler-brandt-bremen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Waller Heerstr. 12",
+        "postalCode": "28219",
+        "addressLocality": "Bremen",
+        "addressCountry": "DE"
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "07:00","closes": "18:00"},
+        {"@type": "OpeningHoursSpecification","dayOfWeek": "Saturday","opens": "08:00","closes": "13:00"}
+      ],
+      "areaServed": ["Bremen","Bremerhaven","Delmenhorst","Achim","Lilienthal","Worpswede","Verden"],
+      "foundingDate": "1987"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "Wie schnell erhalten wir ein Angebot?","acceptedAnswer": {"@type": "Answer","text": "Nach Ihrer Anfrage melden wir uns in der Regel am selben oder nächsten Werktag. Das Festpreis-Angebot erhalten Sie innerhalb von 48 Stunden nach dem Vor-Ort-Termin."}},
+        {"@type": "Question","name": "Arbeiten Sie auch am Wochenende?","acceptedAnswer": {"@type": "Answer","text": "Ja, für größere Projekte oder wenn eine Betriebsunterbrechung vermieden werden soll, arbeiten wir auch samstags."}},
+        {"@type": "Question","name": "Welche Farben und Materialien verwenden Sie?","acceptedAnswer": {"@type": "Answer","text": "Wir arbeiten mit Markenprodukten von Caparol, Alpina und Brillux. Auf Wunsch verwenden wir Öko-Farben mit niedrigen VOC-Werten."}},
+        {"@type": "Question","name": "Muss ich während der Arbeiten zu Hause sein?","acceptedAnswer": {"@type": "Answer","text": "Nein. Viele Kunden übergeben uns einen Schlüssel und kommen erst zur Abnahme. Unsere Mitarbeiter sind versichert."}},
+        {"@type": "Question","name": "Bieten Sie eine Garantie auf Ihre Arbeiten?","acceptedAnswer": {"@type": "Answer","text": "Ja, alle Malerarbeiten unterliegen der gesetzlichen Gewährleistung von 5 Jahren."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  'use strict';
+
+  /* Burger */
+  var burger = document.querySelector('.nav__burger');
+  var navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', function(){
+    var exp = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', String(!exp));
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(function(l){
+    l.addEventListener('click', function(){
+      burger.setAttribute('aria-expanded','false');
+      navLinks.classList.remove('open');
+    });
+  });
+
+  /* Scroll reveal */
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduced){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    },{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
+  }
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-item__btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var exp = this.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-item__btn').forEach(function(b){
+        b.setAttribute('aria-expanded','false');
+        document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+      });
+      if(!exp){
+        this.setAttribute('aria-expanded','true');
+        document.getElementById(this.getAttribute('aria-controls')).classList.add('open');
+      }
+    });
+  });
+
+  /* Form */
+  var form = document.getElementById('contact-form');
+  var success = document.getElementById('form-success');
+
+  function setErr(el, errId, show){
+    if(show){ el.classList.add('error'); document.getElementById(errId).classList.add('visible'); }
+    else { el.classList.remove('error'); document.getElementById(errId).classList.remove('visible'); }
+  }
+
+  ['f-name','f-email','f-leistung','f-msg'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    var errId = id === 'f-name' ? 'err-name' : id === 'f-email' ? 'err-email' : id === 'f-leistung' ? 'err-leistung' : 'err-msg';
+    el.addEventListener('input', function(){ if(this.value.trim()) setErr(this, errId, false); });
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var ok = true;
+    var name = document.getElementById('f-name');
+    var email = document.getElementById('f-email');
+    var leistung = document.getElementById('f-leistung');
+    var msg = document.getElementById('f-msg');
+    var dsgvo = document.getElementById('f-dsgvo');
+    var errDsgvo = document.getElementById('err-dsgvo');
+
+    if(!name.value.trim()){ setErr(name,'err-name',true); ok=false; } else { setErr(name,'err-name',false); }
+    if(!email.value.trim()||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){ setErr(email,'err-email',true); ok=false; } else { setErr(email,'err-email',false); }
+    if(!leistung.value){ setErr(leistung,'err-leistung',true); ok=false; } else { setErr(leistung,'err-leistung',false); }
+    if(!msg.value.trim()){ setErr(msg,'err-msg',true); ok=false; } else { setErr(msg,'err-msg',false); }
+    if(!dsgvo.checked){ errDsgvo.style.display='block'; ok=false; } else { errDsgvo.style.display='none'; }
+
+    if(ok){
+      form.style.display='none';
+      success.style.display='block';
+      success.focus();
+    } else {
+      var first = form.querySelector('.error');
+      if(first) first.focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>
